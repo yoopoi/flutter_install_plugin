@@ -37,10 +37,15 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-    kotlinOptions {
-        jvmTarget = "11"   // ← 关键：强制指定 11
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
+    // 2. 设置 Kotlin 编译版本
+    kotlinOptions {
+        jvmTarget = "11"
+    }
     namespace 'com.example.installplugin'
 }
 
