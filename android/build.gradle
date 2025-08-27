@@ -37,7 +37,10 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
-    
+    kotlinOptions {
+        jvmTarget = "11"   // ← 关键：强制指定 11
+    }
+
     namespace 'com.example.installplugin'
 }
 
