@@ -46,7 +46,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    namespace 'com.example.installplugin'
+    namespace 'com.zaihui.installplugin'
 }
 
 dependencies {
