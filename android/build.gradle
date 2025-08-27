@@ -2,7 +2,7 @@ group 'com.example.installplugin'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    ext.kotlin_version = '1.9.10' // 升级 Kotlin 插件版本
     repositories {
         google()
         mavenCentral()
